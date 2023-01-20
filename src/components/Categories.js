@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function Categories() {
   return <button type="button">Check status</button>;

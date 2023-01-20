@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 function InputBooks() {
-  const [book, setBook] = useState({ title: "", author: "" });
+  const [book, setBook] = useState({ title: '', author: '' });
 
   const handleChange = (e) => {
     setBook({
