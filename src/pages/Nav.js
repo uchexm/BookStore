@@ -5,10 +5,12 @@ function Nav() {
   return (
     <div className="navContainer">
       <div className="logoContainer">
-        <h1 className="logo">Bookstore_CMS</h1>
+        <h1 className="logo">
+          Bookstore_CMS
+        </h1>
       </div>
       <nav className="navLinks">
-        <Link to="/">Books</Link>
+        <Link to="/">BookList</Link>
         <Link to="/categories">Categories</Link>
       </nav>
     </div>
