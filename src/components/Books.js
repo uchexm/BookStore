@@ -1,9 +1,11 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { useDispatch } from "react-redux";
-import { removeBook } from "../redux/Book/Book";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { removeBook } from '../redux/Book/Book';
 
-const Book = ({ id, title, author, chapter, genre, progress }) => {
+const Book = ({
+  id, title, author, chapter, genre, progress,
+}) => {
   const dispatch = useDispatch();
 
   const handleRemove = () => {
@@ -25,7 +27,10 @@ const Book = ({ id, title, author, chapter, genre, progress }) => {
         </div>
       </div>
       <div className="progress">
-        <h3 className="completed">{progress}% Completed</h3>
+        <h3 className="completed">
+          {progress}
+          % Completed
+        </h3>
       </div>
       <div className="detailedProgress">
         <h3 className="chapterHeader">CURRENT CHAPTER</h3>

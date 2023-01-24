@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import { useDispatch } from "react-redux";
-import { v4 as uuidv4 } from "uuid";
-import { addBook } from "../redux/Book/Book";
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
+import { addBook } from '../redux/Book/Book';
 
 function InputBooks() {
-  const [title, setTitle] = useState("");
-  const [author, setAuthor] = useState("");
+  const [title, setTitle] = useState('');
+  const [author, setAuthor] = useState('');
   const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
@@ -15,14 +15,14 @@ function InputBooks() {
       title,
       author,
       progress: 30,
-      genre: "Psychology",
+      genre: 'Psychology',
       chapter: 2,
     };
 
     if (title.length && author.length) {
       dispatch(addBook(book));
-      setTitle("");
-      setAuthor("");
+      setTitle('');
+      setAuthor('');
     }
   };
 
