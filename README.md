@@ -80,7 +80,7 @@ Run npm install to intall all dependencies required to run the project.
 To run the project, execute the following command:
 
 ```sh
- npm run start
+ npm start
 
  This starts the development server on port: 3000
 ```
