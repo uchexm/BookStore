@@ -1,7 +1,6 @@
-/* eslint-disable import/extensions */
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { checkStatus } from '../redux/categories/Categories.js';
+import { checkStatus } from '../redux/categories/categories';
 
 const Categories = () => {
   const bookCategories = useSelector((state) => state.categories);
