@@ -42,7 +42,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-<!-- - You may see a live demo [here](https://github.com/uchexm/BookStore.git) -->
+<!-- - You may see a live demo [here](https://book-store-zejn.onrender.com/) -->
 
 - To be updated soon.
 
