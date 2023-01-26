@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { fetchBooks } from "../redux/Book/Book";
-import InputBooks from "./InputBooks";
-import Book from "./Book";
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchBooks } from '../redux/Book/Book';
+import InputBooks from './InputBooks';
+import Book from './Books';
 
 function BookList() {
   const books = useSelector((state) => state.books);
@@ -10,7 +10,7 @@ function BookList() {
 
   useEffect(() => {
     dispatch(fetchBooks());
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="ListContainer">

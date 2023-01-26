@@ -1,13 +1,13 @@
-import React, { useState } from "react";
-import { useDispatch } from "react-redux";
-import { v4 as uuidv4 } from "uuid";
-import swal from "sweetalert";
-import { addBook } from "../redux/Book/Book";
-import "./InputBooks.css";
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
+import swal from 'sweetalert';
+import { addBook } from '../redux/Book/Book';
+import './InputBooks.css';
 
 function InputBooks() {
-  const [title, setTitle] = useState("");
-  const [author, setAuthor] = useState("");
+  const [title, setTitle] = useState('');
+  const [author, setAuthor] = useState('');
   const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
@@ -20,9 +20,9 @@ function InputBooks() {
 
     if (title.length && author.length) {
       dispatch(addBook(book));
-      swal("Done!", `${title} successfully added`, "success");
-      setTitle("");
-      setAuthor("");
+      swal('Done!', `${title} successfully added`, 'success');
+      setTitle('');
+      setAuthor('');
     }
   };
 

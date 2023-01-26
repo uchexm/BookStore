@@ -1,12 +1,11 @@
-import { createAsyncThunk } from "@reduxjs/toolkit";
-import axios from "axios";
+import { createAsyncThunk } from '@reduxjs/toolkit';
+import axios from 'axios';
 
 // Actions
-const ADD_BOOK = "bookstore/Books/ADD_BOOK";
-const REMOVE_BOOK = "bookstore/Books/REMOVE_BOOK";
-const FETCH_BOOKS = "bookstore/Books/FETCH_BOOKS";
-const BOOKS_URL =
-  "https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/xbtxUlJ5e4rfRMqbYme8/books";
+const ADD_BOOK = 'bookstore/Books/ADD_BOOK';
+const REMOVE_BOOK = 'bookstore/Books/REMOVE_BOOK';
+const FETCH_BOOKS = 'bookstore/Books/FETCH_BOOKS';
+const BOOKS_URL = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/xbtxUlJ5e4rfRMqbYme8/books';
 
 const books = [];
 
@@ -40,7 +39,7 @@ export const addBook = createAsyncThunk(ADD_BOOK, async (book) => {
     item_id: book.id,
     title: book.title,
     author: book.author,
-    category: "null",
+    category: 'null',
   });
   return {
     book: [
@@ -49,7 +48,7 @@ export const addBook = createAsyncThunk(ADD_BOOK, async (book) => {
         {
           author: book.author,
           title: book.title,
-          category: "null",
+          category: 'null',
         },
       ],
     ],

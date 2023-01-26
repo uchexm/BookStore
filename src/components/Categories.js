@@ -1,7 +1,7 @@
-import React from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { checkStatus } from "../redux/Categories/Categories";
-import "./Categories.css";
+import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { checkStatus } from '../redux/categories/categories';
+import './Categories.css';
 
 const Categories = () => {
   const bookCategories = useSelector((state) => state.categories);

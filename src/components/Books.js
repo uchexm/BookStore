@@ -1,11 +1,11 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { useDispatch } from "react-redux";
-import { CircularProgressbar } from "react-circular-progressbar";
-import swal from "sweetalert";
-import { removeBook } from "../redux/Book/Book";
-import "react-circular-progressbar/dist/styles.css";
-import "./Book.css";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { CircularProgressbar } from 'react-circular-progressbar';
+import swal from 'sweetalert';
+import { removeBook } from '../redux/Book/Book';
+import 'react-circular-progressbar/dist/styles.css';
+import './Books.css';
 
 const Book = ({ id, title, author }) => {
   const dispatch = useDispatch();
@@ -14,7 +14,7 @@ const Book = ({ id, title, author }) => {
 
   const handleRemove = () => {
     dispatch(removeBook(id));
-    swal("Done!", `${title} successfully removed`, "success");
+    swal('Done!', `${title} successfully removed`, 'success');
   };
 
   return (
@@ -40,9 +40,12 @@ const Book = ({ id, title, author }) => {
             <CircularProgressbar value={progress} />
           </div>
           <div className="perCentContainer">
-            <h2>{progress}%</h2>
+            <h2>
+              {progress}
+              %
+            </h2>
             <h3
-              style={{ fontFamily: "Montserrat", opacity: 0.5, fontSize: 14 }}
+              style={{ fontFamily: 'Montserrat', opacity: 0.5, fontSize: 14 }}
             >
               Completed
             </h3>
