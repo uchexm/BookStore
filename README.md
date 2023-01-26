@@ -40,11 +40,11 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- LIVE DEMO -->
+
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-<!-- - You may see a live demo [here](https://book-store-zejn.onrender.com/) -->
-
-- To be updated soon.
+- [Live Demo Link](https://book-store-zejn.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
