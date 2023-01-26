@@ -11,7 +11,7 @@
     - [Setup](#setup)
     - [Install](#install)
     - [Usage](#usage)
-  - [👥 Authors ](#-authors-)
+  - [👥 Author ](#-author-)
   - [🔭 Future Features ](#-future-features-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
@@ -80,14 +80,14 @@ Run npm install to intall all dependencies required to run the project.
 To run the project, execute the following command:
 
 ```sh
- npm run start
+ npm start
 
  This starts the development server on port: 3000
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="authors"></a>
 
 👤 **Uchechi Nwaka**
 
@@ -99,14 +99,20 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Your contributions are welcome]**
+- [ ] **AI Integration**
+- [ ] **Audio Books**
+- [ ] **Book Downloads**
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 My gratitude goes to Microverse for providing me with the design for this project.
 
+<!-- LICENSE -->
+
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENCE.md) licensed.
+This project is [MIT](./LICENSE) licensed.
+
+_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
