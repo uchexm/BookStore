@@ -33,21 +33,18 @@ function InputBooks() {
         <input
           className="title"
           type="text"
-          placeholder="Add title..."
+          placeholder="Book title"
           value={title}
           name="title"
           onChange={(e) => setTitle(e.target.value)}
           required
         />
-        <input
-          className="author"
-          type="text"
-          placeholder="Add Author's name..."
-          value={author}
-          name="author"
-          onChange={(e) => setAuthor(e.target.value)}
-          required
-        />
+        <select className="category">
+          <option value="Category">Category</option>
+          <option value="Science Fiction">Science Fiction</option>
+          <option value="Economy">Economy Fiction</option>
+        </select>
+
         <button type="submit" onSubmit={handleSubmit} className="addBook">
           ADD BOOK
         </button>
