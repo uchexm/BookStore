@@ -22,7 +22,7 @@
 
 ## 🛠 Built With <a name="React JS, CSS & JavaScript"></a>
 
-### Tech Stack <a name="tech-stack"></a>
+### Tech Stack <a name="tech-stacks"></a>
 
 <details>
   <summary>Client</summary>
